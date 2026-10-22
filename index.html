@@ -1,155 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIL RIZZ x SPIDER-MAN | Official Hero Suit & Gear</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts & Font Awesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIZAL | Tesla Inspired</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#08090c;color:white;
+  font-family:Arial,Helvetica,sans-serif;
+}
+nav{
+  height:76px;padding:0 7%;
+  display:flex;align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #292a30;
+  background:#08090cee;position:sticky;top:0;z-index:5;
+}
+.logo{font-size:25px;font-weight:800;letter-spacing:8px}
+.logo span{color:#e82127}
+nav a{color:#ddd;text-decoration:none;margin-left:25px;font-size:14px}
+nav a:hover{color:#e82127}
+.hero{
+  min-height:590px;padding:100px 8%;
+  display:flex;align-items:center;
+  background:
+  linear-gradient(90deg,#08090cf5 0%,#08090cbb 45%,#08090c22 100%),
+  url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1800&q=85')
+  center/cover;
+}
+.content{max-width:580px}
+.eyebrow{color:#ed2931;letter-spacing:5px;font-size:12px}
+h1{font-size:clamp(58px,10vw,112px);margin:22px 0 8px;letter-spacing:4px}
+h2{font-size:30px;margin-bottom:18px}
+p{color:#b9bac3;line-height:1.9}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-block;padding:14px 25px;border-radius:30px;
+  text-decoration:none;font-size:14px;transition:.2s;
+}
+.primary{background:#e82127;color:white}
+.secondary{border:1px solid #888;color:white}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.2)}
+.features{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  padding:55px 6%;gap:25px;text-align:center;
+}
+.feature{padding:18px 10px}
+.feature .icon{font-size:30px;color:#e82127;margin-bottom:15px}
+.feature h3{font-size:17px;margin-bottom:10px}
+.feature p{font-size:13px}
+.about{text-align:center;padding:75px 20px;background:#101116}
+.about p{max-width:650px;margin:15px auto}
+footer{text-align:center;padding:28px;color:#777;font-size:12px;letter-spacing:3px}
+@media(max-width:700px){
+ nav{padding:0 5%}
+ nav a{margin-left:10px;font-size:12px}
+ nav .optional{display:none}
+ .hero{min-height:540px;padding:70px 7%;background-position:60% center}
+ .features{grid-template-columns:repeat(2,1fr);padding:35px 5%}
+ h2{font-size:25px}
+}
+</style>
 </head>
 <body>
 
-  <!-- BACKGROUND CANVAS UNTUK EFEK JARING / PARTIKEL -->
-  <div class="web-overlay"></div>
+<nav>
+  <div class="logo"><span>T</span>ESLA</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about" class="optional">About</a>
+    <a href="#projects" class="optional">Vision</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="#" class="logo">LIL <span>RIZZ</span></a>
-    <ul class="nav-links">
-      <li><a href="#hero">Beranda</a></li>
-      <li><a href="#suits">Koleksi Kostum</a></li>
-      <li><a href="#stats">Statistik</a></li>
-      <li><a href="#booking">Pesan Kostum</a></li>
-    </ul>
-    <a href="#booking" class="btn-primary">Gabung Squad</a>
-  </nav>
+<section class="hero" id="home">
+  <div class="content">
+    <div class="eyebrow">DRIVEN BY THE FUTURE</div>
+    <h1>RIZAL</h1>
+    <h2>Innovation today. A better tomorrow.</h2>
+    <p>
+      Selamat datang di website pribadi Rizal.
+      Tempat berbagi ide, kreativitas, teknologi,
+      dan inspirasi dari dunia Tesla.
+    </p>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">Jelajahi ↓</a>
+      <a href="#about" class="btn secondary">Tentang Saya</a>
+    </div>
+  </div>
+</section>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <span class="tagline"><i class="fa-solid fa-spider"></i> SPIDER-MAN EDITION</span>
-      <h1>BECOME THE NEXT <span>RIZZ-SLINGER</span></h1>
-      <p>Kombinasi teknologi jaring mutakhir dan aura Rizz tanpa batas. Hadapi kejahatan dengan gaya Spider-Man paling ikonik dari Multiverse.</p>
-      <div class="hero-buttons">
-        <a href="#suits" class="btn-primary"><i class="fa-solid fa-mask"></i> Lihat Kostum</a>
-        <a href="#booking" class="btn-secondary"><i class="fa-solid fa-bolt"></i> Test Drive Suit</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <div class="glow-ring"></div>
-      <img src="https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=800&q=80" alt="Lil Rizz Spider-Man">
-    </div>
-  </section>
+<section class="features" id="projects">
+  <div class="feature">
+    <div class="icon">ϟ</div>
+    <h3>Clean Energy</h3>
+    <p>Energi bersih untuk masa depan yang lebih baik.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">◇</div>
+    <h3>Smart Mobility</h3>
+    <p>Teknologi yang mengubah cara kita bergerak.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">✧</div>
+    <h3>Innovation</h3>
+    <p>Terus belajar, berkarya, dan berkembang.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">☆</div>
+    <h3>Future Vision</h3>
+    <p>Membangun mimpi dengan ide dan kreativitas.</p>
+  </div>
+</section>
 
-  <!-- STATS BAR -->
-  <section id="stats" class="stats-bar">
-    <div class="stat-item">
-      <h3>99.9%</h3>
-      <p>Rizz Factor</p>
-    </div>
-    <div class="stat-item">
-      <h3>350 MPH</h3>
-      <p>Kecepatan Swing</p>
-    </div>
-    <div class="stat-item">
-      <h3>100%</h3>
-      <p>Akurasi Web-Shooter</p>
-    </div>
-    <div class="stat-item">
-      <h3>0.01 detik</h3>
-      <p>Spider-Sense Response</p>
-    </div>
-  </section>
+<section class="about" id="about">
+  <div class="eyebrow">ABOUT RIZAL</div>
+  <h2>Mimpi Besar. Masa Depan Lebih Baik.</h2>
+  <p>
+    Saya Rizal. Saya tertarik pada teknologi, bisnis,
+    dan inovasi. Website ini adalah ruang untuk
+    memperkenalkan visi dan perjalanan saya.
+  </p>
+</section>
 
-  <!-- SUITS COLLECTION SECTION -->
-  <section id="suits" class="suits-section">
-    <div class="section-title">
-      <h2>KOLEKSI KOSTUM LIL RIZZ</h2>
-      <p>Pilih mode tempur Spider-Man yang sesuai dengan gaya bertarungmu</p>
-    </div>
-
-    <div class="suits-grid">
-      <!-- Card 1 -->
-      <div class="suit-card">
-        <div class="suit-badge">BESTSELLER</div>
-        <div class="suit-icon"><i class="fa-solid fa-spider"></i></div>
-        <h3>Classic Rizz Suit</h3>
-        <p>Warna merah-biru klasik dengan pola jaring perak berkilau dan sistem Rizz-Sense terintegrasi.</p>
-        <ul class="suit-features">
-          <li><i class="fa-solid fa-check"></i> Web-Fluid Karbon Tinggi</li>
-          <li><i class="fa-solid fa-check"></i> Lensa HUD Interaktif</li>
-        </ul>
-        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="suit-card highlighted">
-        <div class="suit-badge alt">LIMITED</div>
-        <div class="suit-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Stealth Noir Edition</h3>
-        <p>Desain serba hitam dengan aksen neon merah membara. Cocok untuk misi malam hari berkecepatan tinggi.</p>
-        <ul class="suit-features">
-          <li><i class="fa-solid fa-check"></i> Mode Penyamaran Bayangan</li>
-          <li><i class="fa-solid fa-check"></i> Kevlar Ringan Tahan Peluru</li>
-        </ul>
-        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="suit-card">
-        <div class="suit-badge">CYBER</div>
-        <div class="suit-icon"><i class="fa-solid fa-microchip"></i></div>
-        <h3>Cyber 2099 Rizz</h3>
-        <p>Dilengkapi teknologi Nano-Tech yang dapat berubah bentuk sesuai dengan perintah pikiran penggunanya.</p>
-        <ul class="suit-features">
-          <li><i class="fa-solid fa-check"></i> AI Assistant "RIZZ-AI"</li>
-          <li><i class="fa-solid fa-check"></i> Sayap Web-Glider Elektro</li>
-        </ul>
-        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING FORM SECTION -->
-  <section id="booking" class="contact-section">
-    <div class="form-card">
-      <div class="form-header">
-        <h2>PESAN KOSTUM LIL RIZZ</h2>
-        <p>Jadwalkan pengukuran dan kustomisasi kostum Spider-Man milikmu sekarang!</p>
-      </div>
-      <form action="#" method="POST">
-        <div class="form-group">
-          <label for="name">Nama Lengkap / Codename</label>
-          <input type="text" id="name" placeholder="Contoh: Peter Rizz" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email / Kontak WhatsApp</label>
-          <input type="text" id="email" placeholder="0812xxxxxxx atau email@domain.com" required>
-        </div>
-        <div class="form-group">
-          <label for="suit-select">Pilih Varian Kostum</label>
-          <select id="suit-select" required>
-            <option value="">-- Pilih Kostum --</option>
-            <option value="classic">Classic Rizz Suit</option>
-            <option value="stealth">Stealth Noir Edition</option>
-            <option value="cyber">Cyber 2099 Rizz</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Pesan / Catatan Ukuran</label>
-          <textarea id="message" rows="4" placeholder="Tuliskan catatan khusus untuk pesananmu..."></textarea>
-        </div>
-        <button type="submit" class="btn-primary btn-full">Kirim Permintaan Pesanan</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 LIL RIZZ x SPIDER-MAN. All Rights Reserved. Designed for web-slingers around the world.</p>
-  </footer>
+<footer id="contact">
+  RIZAL × TESLA INSPIRED
+  <p>Personal website · Built for the future</p>
+</footer>
 
 </body>
 </html>
