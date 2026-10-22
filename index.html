@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIL RIZZ x SPIDER-MAN | Official Hero Suit & Gear</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- BACKGROUND CANVAS UNTUK EFEK JARING / PARTIKEL -->
+  <div class="web-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">LIL <span>RIZZ</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#suits">Koleksi Kostum</a></li>
+      <li><a href="#stats">Statistik</a></li>
+      <li><a href="#booking">Pesan Kostum</a></li>
+    </ul>
+    <a href="#booking" class="btn-primary">Gabung Squad</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <span class="tagline"><i class="fa-solid fa-spider"></i> SPIDER-MAN EDITION</span>
+      <h1>BECOME THE NEXT <span>RIZZ-SLINGER</span></h1>
+      <p>Kombinasi teknologi jaring mutakhir dan aura Rizz tanpa batas. Hadapi kejahatan dengan gaya Spider-Man paling ikonik dari Multiverse.</p>
+      <div class="hero-buttons">
+        <a href="#suits" class="btn-primary"><i class="fa-solid fa-mask"></i> Lihat Kostum</a>
+        <a href="#booking" class="btn-secondary"><i class="fa-solid fa-bolt"></i> Test Drive Suit</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="glow-ring"></div>
+      <img src="https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=800&q=80" alt="Lil Rizz Spider-Man">
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section id="stats" class="stats-bar">
+    <div class="stat-item">
+      <h3>99.9%</h3>
+      <p>Rizz Factor</p>
+    </div>
+    <div class="stat-item">
+      <h3>350 MPH</h3>
+      <p>Kecepatan Swing</p>
+    </div>
+    <div class="stat-item">
+      <h3>100%</h3>
+      <p>Akurasi Web-Shooter</p>
+    </div>
+    <div class="stat-item">
+      <h3>0.01 detik</h3>
+      <p>Spider-Sense Response</p>
+    </div>
+  </section>
+
+  <!-- SUITS COLLECTION SECTION -->
+  <section id="suits" class="suits-section">
+    <div class="section-title">
+      <h2>KOLEKSI KOSTUM LIL RIZZ</h2>
+      <p>Pilih mode tempur Spider-Man yang sesuai dengan gaya bertarungmu</p>
+    </div>
+
+    <div class="suits-grid">
+      <!-- Card 1 -->
+      <div class="suit-card">
+        <div class="suit-badge">BESTSELLER</div>
+        <div class="suit-icon"><i class="fa-solid fa-spider"></i></div>
+        <h3>Classic Rizz Suit</h3>
+        <p>Warna merah-biru klasik dengan pola jaring perak berkilau dan sistem Rizz-Sense terintegrasi.</p>
+        <ul class="suit-features">
+          <li><i class="fa-solid fa-check"></i> Web-Fluid Karbon Tinggi</li>
+          <li><i class="fa-solid fa-check"></i> Lensa HUD Interaktif</li>
+        </ul>
+        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="suit-card highlighted">
+        <div class="suit-badge alt">LIMITED</div>
+        <div class="suit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Stealth Noir Edition</h3>
+        <p>Desain serba hitam dengan aksen neon merah membara. Cocok untuk misi malam hari berkecepatan tinggi.</p>
+        <ul class="suit-features">
+          <li><i class="fa-solid fa-check"></i> Mode Penyamaran Bayangan</li>
+          <li><i class="fa-solid fa-check"></i> Kevlar Ringan Tahan Peluru</li>
+        </ul>
+        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="suit-card">
+        <div class="suit-badge">CYBER</div>
+        <div class="suit-icon"><i class="fa-solid fa-microchip"></i></div>
+        <h3>Cyber 2099 Rizz</h3>
+        <p>Dilengkapi teknologi Nano-Tech yang dapat berubah bentuk sesuai dengan perintah pikiran penggunanya.</p>
+        <ul class="suit-features">
+          <li><i class="fa-solid fa-check"></i> AI Assistant "RIZZ-AI"</li>
+          <li><i class="fa-solid fa-check"></i> Sayap Web-Glider Elektro</li>
+        </ul>
+        <a href="#booking" class="btn-primary btn-full">Pilih Kostum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM SECTION -->
+  <section id="booking" class="contact-section">
+    <div class="form-card">
+      <div class="form-header">
+        <h2>PESAN KOSTUM LIL RIZZ</h2>
+        <p>Jadwalkan pengukuran dan kustomisasi kostum Spider-Man milikmu sekarang!</p>
+      </div>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Nama Lengkap / Codename</label>
+          <input type="text" id="name" placeholder="Contoh: Peter Rizz" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email / Kontak WhatsApp</label>
+          <input type="text" id="email" placeholder="0812xxxxxxx atau email@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label for="suit-select">Pilih Varian Kostum</label>
+          <select id="suit-select" required>
+            <option value="">-- Pilih Kostum --</option>
+            <option value="classic">Classic Rizz Suit</option>
+            <option value="stealth">Stealth Noir Edition</option>
+            <option value="cyber">Cyber 2099 Rizz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan / Catatan Ukuran</label>
+          <textarea id="message" rows="4" placeholder="Tuliskan catatan khusus untuk pesananmu..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Kirim Permintaan Pesanan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 LIL RIZZ x SPIDER-MAN. All Rights Reserved. Designed for web-slingers around the world.</p>
+  </footer>
+
+</body>
+</html>
