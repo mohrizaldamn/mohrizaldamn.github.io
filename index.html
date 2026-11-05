@@ -1,136 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LILRIZZ | Tesla Inspired</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  background:#08090c;color:white;
-  font-family:Arial,Helvetica,sans-serif;
-}
-nav{
-  height:76px;padding:0 7%;
-  display:flex;align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid #292a30;
-  background:#08090cee;position:sticky;top:0;z-index:5;
-}
-.logo{font-size:25px;font-weight:800;letter-spacing:8px}
-.logo span{color:#e82127}
-nav a{color:#ddd;text-decoration:none;margin-left:25px;font-size:14px}
-nav a:hover{color:#e82127}
-.hero{
-  min-height:590px;padding:100px 8%;
-  display:flex;align-items:center;
-  background:
-  linear-gradient(90deg,#08090cf5 0%,#08090cbb 45%,#08090c22 100%),
-  url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1800&q=85')
-  center/cover;
-}
-.content{max-width:580px}
-.eyebrow{color:#ed2931;letter-spacing:5px;font-size:12px}
-h1{font-size:clamp(58px,10vw,112px);margin:22px 0 8px;letter-spacing:4px}
-h2{font-size:30px;margin-bottom:18px}
-p{color:#b9bac3;line-height:1.9}
-.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-.btn{
-  display:inline-block;padding:14px 25px;border-radius:30px;
-  text-decoration:none;font-size:14px;transition:.2s;
-}
-.primary{background:#e82127;color:white}
-.secondary{border:1px solid #888;color:white}
-.btn:hover{transform:translateY(-3px);filter:brightness(1.2)}
-.features{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  padding:55px 6%;gap:25px;text-align:center;
-}
-.feature{padding:18px 10px}
-.feature .icon{font-size:30px;color:#e82127;margin-bottom:15px}
-.feature h3{font-size:17px;margin-bottom:10px}
-.feature p{font-size:13px}
-.about{text-align:center;padding:75px 20px;background:#101116}
-.about p{max-width:650px;margin:15px auto}
-footer{text-align:center;padding:28px;color:#777;font-size:12px;letter-spacing:3px}
-@media(max-width:700px){
- nav{padding:0 5%}
- nav a{margin-left:10px;font-size:12px}
- nav .optional{display:none}
- .hero{min-height:540px;padding:70px 7%;background-position:60% center}
- .features{grid-template-columns:repeat(2,1fr);padding:35px 5%}
- h2{font-size:25px}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRIED NOODLE — Sensasi Mie Goreng Autentik</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #121212; color: #ffffff; line-height: 1.6; }
+        
+        /* Header & Hero */
+        header { background: #1a1a1a; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e65100; }
+        .logo { font-size: 28px; font-weight: bold; color: #ff5722; letter-spacing: 2px; }
+        
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('[suspicious link removed]') center/cover; }
+        .hero h1 { font-size: 48px; color: #ffab40; margin-bottom: 15px; text-transform: uppercase; }
+        .hero p { font-size: 20px; color: #dddddd; max-width: 600px; margin: 0 auto 30px; }
+        
+        .btn { background: #ff5722; color: #fff; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 30px; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #e65100; transform: scale(1.05); }
+
+        /* Menu Section */
+        .container { padding: 80px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
+        .section-title { font-size: 36px; color: #ff5722; margin-bottom: 40px; }
+        
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .menu-card { background: #1e1e1e; padding: 25px; border-radius: 15px; border: 1px solid #333; transition: 0.3s; }
+        .menu-card:hover { border-color: #ff5722; transform: translateY(-5px); }
+        .menu-card h3 { color: #ffab40; margin-bottom: 10px; }
+        .menu-card p { color: #aaa; font-size: 14px; margin-bottom: 15px; }
+        .price { font-size: 22px; font-weight: bold; color: #fff; }
+
+        /* Footer */
+        footer { background: #0a0a0a; text-align: center; padding: 30px; color: #777; border-top: 1px solid #222; }
+    </style>
 </head>
 <body>
 
-<nav>
-  <div class="logo"><span>T</span>ESLA</div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about" class="optional">About</a>
-    <a href="#projects" class="optional">Vision</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <header>
+        <div class="logo">FRIED NOODLE 🍜</div>
+        <a href="#pemesanan" class="btn">Pesan Sekarang</a>
+    </header>
 
-<section class="hero" id="home">
-  <div class="content">
-    <div class="eyebrow">DRIVEN BY THE FUTURE</div>
-    <h1>LILRIZZ</h1>
-    <h2>Innovation today. A better tomorrow.</h2>
-    <p>
-      Selamat datang di website pribadi Rizal.
-      Tempat berbagi ide, kreativitas, teknologi,
-      dan inspirasi dari dunia Tesla.
-    </p>
-    <div class="buttons">
-      <a href="#projects" class="btn primary">Jelajahi ↓</a>
-      <a href="#about" class="btn secondary">Tentang Saya</a>
-    </div>
-  </div>
-</section>
+    <section class="hero">
+        <h1>Sensasi Mie Goreng Autentik</h1>
+        <p>Aroma sangrai wajan yang menggoda dengan paduan bumbu rempah rahasia. Rasakan kelezatan di setiap gigitan!</p>
+        <a href="#menu" class="btn">Lihat Menu Favorit</a>
+    </section>
 
-<section class="features" id="projects">
-  <div class="feature">
-    <div class="icon">ϟ</div>
-    <h3>Clean Energy</h3>
-    <p>Energi bersih untuk masa depan yang lebih baik.</p>
-  </div>
-  <div class="feature">
-    <div class="icon">◇</div>
-    <h3>Smart Mobility</h3>
-    <p>Teknologi yang mengubah cara kita bergerak.</p>
-  </div>
-  <div class="feature">
-    <div class="icon">✧</div>
-    <h3>Innovation</h3>
-    <p>Terus belajar, berkarya, dan berkembang.</p>
-  </div>
-  <div class="feature">
-    <div class="icon">☆</div>
-    <h3>Future Vision</h3>
-    <p>Membangun mimpi dengan ide dan kreativitas.</p>
-  </div>
-</section>
+    <section class="container" id="menu">
+        <h2 class="section-title">Menu Unggulan Kami</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Fried Noodle Special</h3>
+                <p>Mie goreng telur lumer dengan toping ayam suwir renyah dan acar segar.</p>
+                <div class="price">Rp 25.000</div>
+            </div>
+            <div class="menu-card">
+                <h3>Fried Noodle Pedas Nampol</h3>
+                <p>Racikan minyak cabai pilihan dengan level pedas yang memanjakan lidah.</p>
+                <div class="price">Rp 28.000</div>
+            </div>
+            <div class="menu-card">
+                <h3>Fried Noodle Seafood Glow</h3>
+                <p>Kombinasi udang dan cumi segar disangrai manis gurih sempurna.</p>
+                <div class="price">Rp 35.000</div>
+            </div>
+        </div>
+    </section>
 
-<section class="about" id="about">
-  <div class="eyebrow">ABOUT RIZAL</div>
-  <h2>Mimpi Besar. Masa Depan Lebih Baik.</h2>
-  <p>
-    Saya lilrizz. Saya tertarik pada teknologi, bisnis,
-    dan inovasi. Website ini adalah ruang untuk
-    memperkenalkan visi dan perjalanan saya.
-  </p>
-</section>
-
-<footer id="contact">
-  LILRIZZ × TESLA INSPIRED
-  <p>Personal website · Built for the future</p>
-</footer>
+    <footer id="pemesanan">
+        <p>&copy; 2026 FRIED NOODLE. Dibuat dengan Bumbu Pilihan & GitHub Pages.</p>
+    </footer>
 
 </body>
 </html>
