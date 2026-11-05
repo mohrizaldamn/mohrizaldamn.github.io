@@ -9,12 +9,18 @@
         body { background-color: #121212; color: #ffffff; line-height: 1.6; }
         
         /* Header & Hero */
-        header { background: #1a1a1a; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e65100; }
+        header { background: #1a1a1a; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e65100; position: sticky; top: 0; z-index: 100; }
         .logo { font-size: 28px; font-weight: bold; color: #ff5722; letter-spacing: 2px; }
         
-        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('[suspicious link removed]') center/cover; }
-        .hero h1 { font-size: 48px; color: #ffab40; margin-bottom: 15px; text-transform: uppercase; }
-        .hero p { font-size: 20px; color: #dddddd; max-width: 600px; margin: 0 auto 30px; }
+        /* Gambar Latar Belakang Hero yang Menggugah Selera */
+        .hero { 
+            text-align: center; 
+            padding: 120px 20px; 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), 
+                        url('[suspicious link removed]') center/cover no-repeat; 
+        }
+        .hero h1 { font-size: 48px; color: #ffab40; margin-bottom: 15px; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+        .hero p { font-size: 20px; color: #dddddd; max-width: 650px; margin: 0 auto 30px; }
         
         .btn { background: #ff5722; color: #fff; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 30px; transition: 0.3s; display: inline-block; }
         .btn:hover { background: #e65100; transform: scale(1.05); }
@@ -24,11 +30,15 @@
         .section-title { font-size: 36px; color: #ff5722; margin-bottom: 40px; }
         
         .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .menu-card { background: #1e1e1e; padding: 25px; border-radius: 15px; border: 1px solid #333; transition: 0.3s; }
-        .menu-card:hover { border-color: #ff5722; transform: translateY(-5px); }
-        .menu-card h3 { color: #ffab40; margin-bottom: 10px; }
-        .menu-card p { color: #aaa; font-size: 14px; margin-bottom: 15px; }
-        .price { font-size: 22px; font-weight: bold; color: #fff; }
+        .menu-card { background: #1e1e1e; padding: 20px; border-radius: 15px; border: 1px solid #333; transition: 0.3s; text-align: left; overflow: hidden; }
+        .menu-card:hover { border-color: #ff5722; transform: translateY(-5px); box-shadow: 0 8px 20px rgba(255,87,34,0.3); }
+        
+        /* Tampilan Gambar Makanan */
+        .menu-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        
+        .menu-card h3 { color: #ffab40; margin-bottom: 10px; font-size: 22px; }
+        .menu-card p { color: #aaa; font-size: 14px; margin-bottom: 15px; min-height: 42px; }
+        .price { font-size: 22px; font-weight: bold; color: #fff; text-align: right; }
 
         /* Footer */
         footer { background: #0a0a0a; text-align: center; padding: 30px; color: #777; border-top: 1px solid #222; }
@@ -51,16 +61,19 @@
         <h2 class="section-title">Menu Unggulan Kami</h2>
         <div class="menu-grid">
             <div class="menu-card">
+                <img src="[suspicious link removed]" alt="Fried Noodle Special">
                 <h3>Fried Noodle Special</h3>
                 <p>Mie goreng telur lumer dengan toping ayam suwir renyah dan acar segar.</p>
                 <div class="price">Rp 25.000</div>
             </div>
             <div class="menu-card">
+                <img src="[suspicious link removed]" alt="Fried Noodle Pedas Nampol">
                 <h3>Fried Noodle Pedas Nampol</h3>
                 <p>Racikan minyak cabai pilihan dengan level pedas yang memanjakan lidah.</p>
                 <div class="price">Rp 28.000</div>
             </div>
             <div class="menu-card">
+                <img src="[suspicious link removed]" alt="Fried Noodle Seafood Glow">
                 <h3>Fried Noodle Seafood Glow</h3>
                 <p>Kombinasi udang dan cumi segar disangrai manis gurih sempurna.</p>
                 <div class="price">Rp 35.000</div>
